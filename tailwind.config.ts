@@ -9,13 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'nii-bg': '#EFEEE9',
+        'nii-bg': '#F5EDE9',
+        'nii-cream': '#EFEEE9',
         'nii-white': '#FFFFFF',
         'nii-text': '#29340C',
-        'nii-accent': '#000000',
+        'nii-accent': '#29340C',
+        'nii-yellow': '#F1DC73',
+        'nii-border': '#29340C',
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        sans: ['var(--font-montserrat)', 'sans-serif'],
+        display: ['var(--font-montserrat)', 'sans-serif'],
+      },
+      borderRadius: {
+        'nii': '12px',
+        'nii-lg': '20px',
       },
     },
   },

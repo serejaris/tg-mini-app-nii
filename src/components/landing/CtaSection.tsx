@@ -8,11 +8,11 @@ export function CtaSection() {
   };
 
   return (
-    <section className="bg-nii-bg px-4 py-12">
+    <section className="bg-nii-bg px-4 py-16">
       <div className="max-w-md mx-auto text-center">
         <button
           onClick={handleClick}
-          className="w-full bg-nii-accent text-white font-bold py-4 px-8 rounded-lg text-lg hover:opacity-90 transition-opacity"
+          className="btn-yellow w-full text-xl"
         >
           Поступить в НИИ ВИП
         </button>

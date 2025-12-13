@@ -2,40 +2,40 @@ import Image from 'next/image';
 
 export function AboutSection() {
   return (
-    <section className="bg-nii-white px-4 py-8">
+    <section className="bg-nii-bg px-4 py-12">
       <div className="max-w-md mx-auto">
-        <div className="mb-6">
-          <p className="text-lg text-nii-text font-medium mb-4">
+        <div className="card-decorated p-6 mb-8 decorated-rotate-reverse">
+          <p className="text-xl text-nii-text font-bold mb-4">
             И вот что я понял.
           </p>
-          <p className="text-base text-nii-text mb-4">
+          <p className="text-base text-nii-text mb-4 leading-relaxed">
             Ты не можешь сделать человека тем, кем он хочет —
-            это ему придётся делать самому!
+            <span className="font-bold"> это ему придётся делать самому!</span>
           </p>
-          <p className="text-base text-nii-text mb-4">
+          <p className="text-base text-nii-text mb-4 leading-relaxed">
             Но ты можешь быть рядом с ним на его пути,
             делиться с ним знаниями, теплом и любовью,
             поддерживать его.
           </p>
-          <p className="text-base text-nii-text">
+          <p className="text-lg text-nii-text font-medium">
             Ты можешь поделиться с ним своей мечтой.
           </p>
         </div>
 
-        <div className="flex items-start gap-4">
-          <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+        <div className="text-center">
+          <div className="mx-auto mb-4 max-w-[280px]">
             <Image
-              src="/images/about-photo.jpg"
+              src="/images/pavel-photo.png"
               alt="Павел Лисовцов"
-              width={80}
-              height={80}
-              className="w-full h-full object-cover"
+              width={280}
+              height={280}
+              className="w-full h-auto mix-blend-multiply"
             />
           </div>
-          <p className="text-sm text-nii-text">
-            Мне 40 лет. Я люблю свою жену и семью. Воспитываю четырёх детей.
-            Последние двенадцать лет строю свой бизнес.
-            Четыре последних года консультирую ребят, помогая настроить их проекты.
+          <p className="font-bold text-nii-text text-lg mb-2">Павел Лисовцов</p>
+          <p className="text-sm text-nii-text leading-relaxed">
+            Мне 40 лет. Люблю жену и семью. Воспитываю четырёх детей.
+            12 лет строю бизнес. 4 года консультирую ребят по проектам.
           </p>
         </div>
       </div>
